@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+$background: #282c34;
+$color: #61dafb;
+$text-color: #fff;
+$default: #f6f9fc;
+body {
+  background: $default;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 10vh;
+  background: $background;
+  color: $text-color;
+}
+.link {
+  text-decoration: none;
+  color: $text-color;
+  &:hover {
+    color: $color;
+  }
+}
+#logo {
+  font-size: 25px;
+  color: $color;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.menu li {
+  font-size: 18px;
+  padding: 0 0 0 2em;
+}
+.bar {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.lines {
+  margin-left: 0.25em;
+}
+.line {
+  width: 25px;
+  height: 0.1em;
+  background: $text-color;
+}
+.line:nth-child(2) {
+  margin: 0.3em 0;
+}
+.closes {
+  cursor: pointer;
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+  display: none;
+}
+.close {
+  width: 20px;
+  height: 0.1em;
+  background: $text-color;
+}
+.close:nth-child(2) {
+  opacity: 0;
+  margin: 0.3em 0;
+}
+.close:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 3px);
+}
+.close:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -4px);
+}
+footer {
+  width: 100%;
+  padding: 1em;
+  background: $background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $text-color;
+}
+button {
+  box-shadow: 0 2px 4px #c8c8c8;
+}
+.link:focus {
+  color: #61dafb;
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 0 1em;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 700px) {
+  .closes {
+    display: block;
+  }
+  .bar {
+    display: flex;
+  }
+  header {
+    justify-content: space-between;
+    padding: 0 1em;
+    height: 8vh;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $background;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: 0.3s all ease-in-out;
+  }
+  .menu li {
+    padding: 0;
+    margin: 1em 0;
+  }
+  .menu.toggle {
+    transform: translateX(0%);
+    transition: 0.3s all ease-in-out;
+  }
+}

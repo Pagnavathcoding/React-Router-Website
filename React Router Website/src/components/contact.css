@@ -1,0 +1,144 @@
+.contact {
+  width: 100%;
+  padding: 0 1em;
+}
+
+.contact-title {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.contact-title h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.contact-1,
+.contact-2,
+.contact-3 {
+  width: 250px;
+  height: 50vh;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 4px #c8c8c8;
+          box-shadow: 0 2px 4px #c8c8c8;
+  padding: 0.25em;
+}
+
+.contact-infos {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-image-1 {
+  width: 100%;
+  height: 20vh;
+  background: url("./Images/contact-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.contact-image-2 {
+  width: 100%;
+  height: 20vh;
+  background: url("./Images/contact-2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.contact-image-3 {
+  width: 100%;
+  height: 20vh;
+  background: url("./Images/contact-3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.contact-data {
+  width: 100%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.contact-data p {
+  padding: 0.5em 0;
+}
+
+.contact-data h1 {
+  font-size: 20px;
+}
+
+.contact-data button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #61dafb;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.contact-2 {
+  margin: 0 1em;
+}
+
+@media (max-width: 900px) {
+  .contact-3 {
+    margin: 1em 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-infos {
+    height: auto;
+    padding: 5em 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-3 {
+    margin: 0;
+  }
+  .contact-2 {
+    margin: 1em 0;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
